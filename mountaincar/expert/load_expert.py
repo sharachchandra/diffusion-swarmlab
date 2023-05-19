@@ -46,9 +46,9 @@ while i < num_pairs:
         print(num_steps)
         ep_return = 0
         num_steps = 0
-# expert_demo_path = 'logs/expert_demonstrations'
-# np.save(expert_demo_path, expert_demo)
-# expert_demo[:, :2] = expert_demo[:, :2] - bias
-# expert_demo[:, :2] = expert_demo[:, :2] / scale
-# normalized_expert_demo_path = 'logs/normalized_expert_demonstrations'
-# np.save(normalized_expert_demo_path, expert_demo)
+expert_demo_path = 'logs/expert_demonstrations'
+np.save(expert_demo_path, expert_demo)
+expert_demo[:, :2] = expert_demo[:, :2] - bias
+expert_demo[:, :2] = expert_demo[:, :2] / scale
+normalized_expert_demo_path = 'logs/normalized_expert_demonstrations'
+np.save(normalized_expert_demo_path, expert_demo)
